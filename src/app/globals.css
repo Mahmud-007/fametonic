@@ -1,0 +1,146 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black text-white;
+}
+
+/* Logo glitch effect with updated colors */
+.logo-glitch {
+  position: relative;
+  display: inline-block;
+}
+
+.logo-glitch::before, 
+.logo-glitch::after {
+  content: 'fametonic';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.logo-glitch::before {
+  left: -2px;
+  color: #FC004E; /* Updated to match your specific pink */
+  text-shadow: 2px 0 #00E7F9; /* Updated to match your specific cyan */
+  clip: rect(24px, 550px, 90px, 0);
+  animation: glitch-anim 3s linear infinite alternate-reverse;
+}
+
+.logo-glitch::after {
+  left: 2px;
+  color: #00E7F9; /* Updated to match your specific cyan */
+  text-shadow: -2px 0 #FC004E; /* Updated to match your specific pink */
+  clip: rect(24px, 550px, 90px, 0);
+  animation: glitch-anim 2s linear infinite alternate-reverse;
+}
+
+@keyframes glitch-anim {
+  0% {
+    clip: rect(16px, 9999px, 56px, 0);
+    transform: skew(0.4deg);
+  }
+  5% {
+    clip: rect(34px, 9999px, 66px, 0);
+    transform: skew(0.7deg);
+  }
+  10% {
+    clip: rect(76px, 9999px, 76px, 0);
+    transform: skew(0.5deg);
+  }
+  15% {
+    clip: rect(15px, 9999px, 25px, 0);
+    transform: skew(0.18deg);
+  }
+  20% {
+    clip: rect(26px, 9999px, 6px, 0);
+    transform: skew(0.3deg);
+  }
+  25% {
+    clip: rect(94px, 9999px, 70px, 0);
+    transform: skew(0.9deg);
+  }
+  30% {
+    clip: rect(7px, 9999px, 93px, 0);
+    transform: skew(0.8deg);
+  }
+  35% {
+    clip: rect(50px, 9999px, 4px, 0);
+    transform: skew(0.37deg);
+  }
+  40% {
+    clip: rect(54px, 9999px, 43px, 0);
+    transform: skew(0.9deg);
+  }
+  45% {
+    clip: rect(4px, 9999px, 12px, 0);
+    transform: skew(0.6deg);
+  }
+  50% {
+    clip: rect(56px, 9999px, 50px, 0);
+    transform: skew(0.4deg);
+  }
+  55% {
+    clip: rect(67px, 9999px, 59px, 0);
+    transform: skew(0.4deg);
+  }
+  60% {
+    clip: rect(10px, 9999px, 26px, 0);
+    transform: skew(0.9deg);
+  }
+  65% {
+    clip: rect(16px, 9999px, 66px, 0);
+    transform: skew(0.4deg);
+  }
+  70% {
+    clip: rect(79px, 9999px, 33px, 0);
+    transform: skew(0.7deg);
+  }
+  75% {
+    clip: rect(33px, 9999px, 2px, 0);
+    transform: skew(0.2deg);
+  }
+  80% {
+    clip: rect(34px, 9999px, 71px, 0);
+    transform: skew(0.8deg);
+  }
+  85% {
+    clip: rect(55px, 9999px, 41px, 0);
+    transform: skew(0.9deg);
+  }
+  90% {
+    clip: rect(78px, 9999px, 45px, 0);
+    transform: skew(0.3deg);
+  }
+  95% {
+    clip: rect(26px, 9999px, 89px, 0);
+    transform: skew(0.1deg);
+  }
+  100% {
+    clip: rect(90px, 9999px, 4px, 0);
+    transform: skew(0.2deg);
+  }
+}
+
+/* Ensure the colorful ring is properly positioned */
+.phone-ring {
+  filter: blur(20px);
+  opacity: 0.8;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
