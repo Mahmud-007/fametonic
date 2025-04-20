@@ -4,44 +4,8 @@
 @tailwind utilities;
 
 body {
-  /* @apply bg-black text-white; */
   background-color: black;
   color: white;
-}
-
-/* Logo glitch effect with updated colors */
-.logo-glitch {
-  position: relative;
-  display: inline-block;
-}
-
-.logo-glitch::before, 
-.logo-glitch::after {
-  content: 'fametonic';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  font-size: 1.875rem;
-  font-weight: bold;
-}
-
-.logo-glitch::before {
-  left: -2px;
-  color: #FC004E; /* Updated to match your specific pink */
-  text-shadow: 2px 0 #00E7F9; /* Updated to match your specific cyan */
-  clip: rect(24px, 550px, 90px, 0);
-  animation: glitch-anim 3s linear infinite alternate-reverse;
-}
-
-.logo-glitch::after {
-  left: 2px;
-  color: #00E7F9; /* Updated to match your specific cyan */
-  text-shadow: -2px 0 #FC004E; /* Updated to match your specific pink */
-  clip: rect(24px, 550px, 90px, 0);
-  animation: glitch-anim 2s linear infinite alternate-reverse;
 }
 
 @keyframes glitch-anim {

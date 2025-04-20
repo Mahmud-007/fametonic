@@ -11,7 +11,6 @@ export default function Home() {
         <meta name="description" content="Discover your potential with Fametonic and turn your social media presence into a profitable career." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Header />
       <main>
         <HeroSection />
