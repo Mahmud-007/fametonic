@@ -21,6 +21,7 @@ export default function Header() {
         style={{ background: "linear-gradient(to right, #FC004E, #00E7F9)" }}
       >
         <p className="font-medium text-sm md:text-3xl">
+          <span>🚀</span>
           <span className="font-bold text-[#00E7F9]">
             FRESH BEGINNINGS SALE:
           </span>{" "}
