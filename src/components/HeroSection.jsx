@@ -3,8 +3,8 @@ import PhoneDisplay from "./PhoneDisplay";
 
 export default function HeroSection() {
   return (
-    <section className="bg-black text-white">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-24">
+    <section className="bg-black text-white h-screen flex items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 w-full">
         <div className="flex flex-col md:flex-row items-center">
           {/* Phone display - shows on top for mobile, moves to right for desktop */}
           <div className="w-full md:hidden mb-8 flex justify-center">
@@ -30,6 +30,7 @@ export default function HeroSection() {
                 with Fametonic:
               </p>
             </div>
+
             {/* Exactly matching bullet points */}
             <ul className="space-y-3 md:space-y-4 text-base md:text-lg">
               <li className="flex items-start">
@@ -57,17 +58,15 @@ export default function HeroSection() {
                 </span>
               </li>
             </ul>
-            
+
+            {/* Get Started button area with glow effect */}
             <div className="pt-4 relative">
               {/* White glow effect behind button */}
               <div className="absolute w-full h-12 flex items-center justify-center">
                 <div className="w-full h-full bg-white blur-lg opacity-20 rounded-md"></div>
               </div>
-
-              <Link
-                href="/get-started"
-                className="inline-block w-full relative z-10"
-              >
+              
+              <Link href="/get-started" className="inline-block w-full relative z-10">
                 <button
                   className="text-white font-bold py-3 w-full text-lg uppercase flex items-center justify-center"
                   style={{
@@ -96,6 +95,7 @@ export default function HeroSection() {
                 1-minute quiz for personalized insights
               </p>
             </div>
+
             <div className="text-xs text-gray-500 text-center md:text-left">
               <p>
                 By clicking "Get Started", you agree with Terms and Conditions,
