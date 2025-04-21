@@ -30,38 +30,44 @@ export default function HeroSection() {
                 with Fametonic:
               </p>
             </div>
-
             {/* Exactly matching bullet points */}
             <ul className="space-y-3 md:space-y-4 text-base md:text-lg">
               <li className="flex items-start">
-                <span className="text-[#FC004E] mr-2 text-lg">✦</span>
+                <span className="text mr-2 text-lg">✨</span>
                 <span>
                   Start growing your influence right away—no waiting required!
                 </span>
               </li>
               <li className="flex items-start">
-                <span className="text-[#FC004E] mr-2 text-lg">✦</span>
+                <span className="text mr-2 text-lg">✨</span>
                 <span>
                   Create viral TikToks and Reels step by step with
                   easy-to-follow lessons
                 </span>
               </li>
               <li className="flex items-start">
-                <span className="text-[#FC004E] mr-2 text-lg">✦</span>
+                <span className="text mr-2 text-lg">✨</span>
                 <span>Use a Personal AI Worker to boost your content</span>
               </li>
               <li className="flex items-start">
-                <span className="text-[#FC004E] mr-2 text-lg">✦</span>
+                <span className="text mr-2 text-lg">✨</span>
                 <span>
                   Learn from expert-led courses designed for aspiring
                   influencers
                 </span>
               </li>
             </ul>
+            
+            <div className="pt-4 relative">
+              {/* White glow effect behind button */}
+              <div className="absolute w-full h-12 flex items-center justify-center">
+                <div className="w-full h-full bg-white blur-lg opacity-20 rounded-md"></div>
+              </div>
 
-            {/* Exactly matching Get Started button area */}
-            <div className="pt-4 ">
-              <Link href="/get-started" className="inline-block w-full">
+              <Link
+                href="/get-started"
+                className="inline-block w-full relative z-10"
+              >
                 <button
                   className="text-white font-bold py-3 w-full text-lg uppercase flex items-center justify-center"
                   style={{
@@ -90,7 +96,6 @@ export default function HeroSection() {
                 1-minute quiz for personalized insights
               </p>
             </div>
-
             <div className="text-xs text-gray-500 text-center md:text-left">
               <p>
                 By clicking "Get Started", you agree with Terms and Conditions,
